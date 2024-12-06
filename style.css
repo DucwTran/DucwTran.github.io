@@ -114,6 +114,12 @@ img {
   color: #cf777f;
   border: #cf777f 2px solid;
 }
+.container__download-button:hover{
+  cursor: pointer;
+  background-color: #cf777f;
+  color: white;
+  border-color: #cf777f;
+}
 
 .container__skill{
   display: flex;
