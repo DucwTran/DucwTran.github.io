@@ -3,103 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>S-gr</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-        
-    <div class="container">
-        <div class="container__nav">
-            <div class="container__logo">
-                <div class="container__logo-main">J</div>
-                <div class="container__logo-name">Jason Stroff</div>
-            </div>
-            <div class="container__social">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
+<body>
+    <!-- Header-->
+    <div class="header">
+        <div class="header__logo">
+            <i class="header__logo-main fa-brands fa-spotify"></i>
         </div>
-
-        <div class="container__infor">
-            <div class="container__infor-img">
-                <img src="https://images.pexels.com/photos/29273107/pexels-photo-29273107/free-photo-of-nh-ng-chu-mong-bi-n-nh-nhang-troi-n-i-luc-hoang-hon-tren-bi-n-tinh-l-ng.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <div class="header__search">
+            <div class="header__search-home">
+                <i class="fa-solid fa-house"></i>
             </div>
-            <div class="container__infor-detail">
-                <div class="container__infor-sayhi">
-                    Hi there
+            <div class="header__search-main">
+                <div class="header__search-main-logo">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div class="container__infor-decs">
-                    <h1>I'm Jason Stroff <br> UI/UX DESIGNER + DEVELOPER <br>based in Florida.</h1>
+                <input class="header__search-main-text" type="text" placeholder="What do you want to play?">
+                <div class="header__search-main-store">
+                    <i class="fa-solid fa-box-archive"></i>
                 </div>
-                <div class="container__infor-achievements">
-                    <div class="experience box">
-                        <div class="num">6+</div>
-                        <div class="char">Experience</div>
-                    </div>
-                    <div class="project box">
-                        <div class="num">89</div>
-                        <div class="char">Projects</div>
-                    </div>
-                    <div class="happly-client box">
-                        <div class="num">52</div>
-                        <div class="char">Happy clients</div>
-                    </div>
-                </div>
-                
             </div>
         </div>
-
-        <div class="about-me">
-            <div class="about-me__title">
-                About me
+        <div class="header__signin">
+            <div class="header__signin-premium">
+                Explore Premium
             </div>
-            <div class="about-me__decs">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempore, dolores distinctio aperiam eius esse suscipit delectus tempora natus autem dicta, est consequuntur totam error debitis cumque voluptates. Et, perferendis.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magnam, velit earum dolores porro, facilis nam hic voluptas quisquam et est quasi incidunt suscipit impedit animi rem possimus? In, doloremque.
+            <div class="header__signin-install">
+                <i class="fa-regular fa-circle-down"></i>
+                <span class="header__signin-install-text">Install App</span>
             </div>
-        </div>
-
-        <div class="container__download">
-            <button class="container__download-button">
-                DOWNLOAD RESUME
-            </button>
-        </div>
-        <div class="container__skill-title">
-            <div class="skill">
-                Core Skills
+            <div class="header__signin-nofi">
+                <i class="fa-solid fa-bell"></i>
             </div>
-            <div class="skill">
-                Other Skills
-            </div>
-        </div>
-        <div class="container__skill">
-            <div class="container__core-skills">
-                <div class="container__core-skills-item">Javascript</div>
-                <div class="container__core-skills-item">Node.js</div>
-                <div class="container__core-skills-item">Express.js</div>
-                <div class="container__core-skills-item">MongoDB</div>
-                <div class="container__core-skills-item">Vue.js</div>
-                <div class="container__core-skills-item">React</div>
-                <div class="container__core-skills-item">Sequelize</div>
-                <div class="container__core-skills-item">Github</div>
-                <div class="container__core-skills-item">HTML</div>
-            </div>
-            <div class="container__other-skills">
-                <div class="container__core-skills-item">Sturyblok</div>
-                <div class="container__core-skills-item">PWAs</div>
-                <div class="container__core-skills-item">Responsive Web Design</div>
-                <div class="container__core-skills-item">React</div>
-                <div class="container__core-skills-item">Vuetify</div>
+            <div class="header__signin-avt">
+                <img class="header__signin-avt-img" src="https://images.pexels.com/photos/950327/pexels-photo-950327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             </div>
         </div>
     </div>
-
+    <!--End Header-->
     
+    <!--Main-->
+    <div class="main">
+        <div class="main__library">
+            <div class="main__library-title">
+                <div class="main__library-title-logo-name">
+                    <div class="main__library-title-logo">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div class="main__library-title-name">
+                        <span>Your Library</span>
+                    </div>
+                </div>
+                <div class="main__library-title-action">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="main__library-type">
+                <div class="main__library-type-item">
+                    Playlists
+                </div>
+                <div class="main__library-type-item">
+                    Albums
+                </div>
+            </div>
+            <div class="main__library-list">
+                <div class="main__library-list-inner">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="main__playlist">
+
+        </div>
+        <div class="main__likedsong">
+
+        </div>
+    </div>
+    <!--End Main-->
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer__music-name">
+            <div class="footer__music-name-img">
+                <img src="https://img6.thuthuatphanmem.vn/uploads/2022/06/22/anh-nen-dien-thoai-don-gian_040350621.jpg" alt="">
+            </div>
+            <div class="footer__music-name-main">
+                <div class="footer__music-name-song">
+                    Spring Snow
+                </div>
+                <div class="footer__music-name-author">
+                    10CM
+                </div>
+            </div>
+            <div class="footer__music-name-tick">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+        <div class="footer__music-duration">
+            <div class="footer__music-duration-act">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-pause"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-repeat"></i>
+            </div>
+            <div class="footer__music-duration-main">
+
+            </div>
+        </div>
+        <div class="footer__music-setup">
+            <i class="fa-solid fa-compact-disc"></i>
+            <i class="fa-solid fa-music"></i>
+            <i class="fa-solid fa-microphone-lines"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
+    </div>
+    <!--End Footer -->
 
 
 </body>
-</html>  
+</html>
