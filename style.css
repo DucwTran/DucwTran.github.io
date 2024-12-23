@@ -279,7 +279,8 @@ body {
 .main__library-list {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 170px);
+  /* height: auto; */
+  max-height: calc(100vh - 170px - 72px);
   border-radius: 5px;
   top: 105px;
   left: 0px;
@@ -370,8 +371,9 @@ body {
   font-weight: 500;
 }
 .main__playlist-rcm {
+  padding-bottom: 20px;
   width: 100%;
-  height: calc(100vh - 125px);
+  height: calc(100vh - 125px - 72px);
   border-radius: 0 0 5px 5px;
   background-color: #121212;
   color: white;
@@ -442,8 +444,9 @@ body {
 }
 .main__likedsong-list {
   width: 100%;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 130px - 72px);
   overflow-y: hidden;
+  padding-bottom: 20px;
 }
 .main__likedsong-list:hover{
   overflow-y: auto;
