@@ -1,23 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .container{
-    margin-top: 100px;
-    margin-left: 100px;
-    display: flex;
-    gap: 30px;
-    align-items: center;
+    /* margin-inline: auto; */
+    width: 100%;
+    height: 100vh;
 }
-.color{
-    display: flex;
-    height: 100px;
-    gap: 10px;
-}
-.color__attribute{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.color__submit button{
+.box {  
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 100%;
     height: 100%;
-    border-radius: 5px;
-    border: 1px solid black;
-    cursor: pointer;
+}
+.box__left{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+.box__left-top{
+    width: 100%;
+    background-color: purple;
+}
+.box__left-bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.box__left-bottom-left{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+.box__left-bottom-left-top{
+    width: 100%;
+    background-color: aqua;
+}
+.box__left-bottom-left-bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.box__left-bottom-left-bottom-left{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+.box__left-bottom-left-bottom-top{
+    width: 100%;
+    background-color: yellow;
+}
+.box__left-bottom-left-bottom-bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.box__left-bottom-left-bottom-bottom-left{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+.box__left-bottom-left-bottom-bottom-left-top{
+    width: 100%;
+    background-color: black;
+}
+.box__left-bottom-left-bottom-bottom-left-bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.box__left-bottom-left-bottom-bottom-left-bottom-left{
+    height: 100%;
+    background-color: yellow;
+}
+.box__left-bottom-left-bottom-bottom-left-bottom-right{
+    height: 100%;   
+    background-color: red;
+}
+.box__left-bottom-left-bottom-bottom-right{
+    height: 100%;
+    background-color: rgb(97, 15, 173);
+}
+.box__left-bottom-left-bottom-right{
+    height: 100%;
+    background-color: green;
+}
+.box__left-bottom-right{
+    height: 100%;
+    background-color: red;
+}
+
+.box__right{
+    height: 100%;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+    .box {  
+        grid-template-columns: repeat(1, 100%);
+    }
+    .box__left{
+        order: 1;
+    }
 }
