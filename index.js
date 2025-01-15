@@ -11,6 +11,9 @@ pokemons.forEach((pokemon, index) =>{
                 <div class="item__name">
                     ${pokemon.name}
                 </div>
+                <div class="he">
+                    doc 
+                </div>
             </div>
         `
 });
