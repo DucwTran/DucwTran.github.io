@@ -1,20 +1,23 @@
+let offset = 0;
+let numberOfRender = 36;
+
+let Allpokemons = [];
+let filteredPokemons = [];
+
+let htmlPokemon = "";
+let htmlType = "";
+
 const fetchAPI = async (url) => {
     const response = await fetch(url);
     const data = await response.json();
     return data;
 }
 
-let numberOfRender = 36;
-let offset = 0;
-let Allpokemons = [];
-let filteredPokemons = [];
-let htmlPokemon = "";
-
 async function getPokemon() {
-    const data = await fetchAPI('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=240');
+    const data = await fetchAPI('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=898');
     console.log(data);
     Allpokemons = data.results;
-    filteredPokemons = pokemons;
+    filteredPokemons = Allpokemons;
     renderPokemons();
 }
 
@@ -25,13 +28,15 @@ function getIDPokemon(url) {
 
 // Hiển thị danh sách Pokémon
 async function renderPokemons() {
-    let htmlType = "";
-
-    for (let index = offset; index < numberOfRender + offset && index < filteredPokemons.length; index++) {
+    for (let index = offset; index < offset + numberOfRender &&  index < filteredPokemons.length; index++) {
+        //Get pokemon
         const pokemon = filteredPokemons[index];
-        const typeData = await fetchAPI(pokemon.url);
 
+        //Get ID of pokemon
         const ID = getIDPokemon(pokemon.url);
+
+        //Get Types of pokemon
+        const typeData = await fetchAPI(pokemon.url);
         htmlType = "";
         typeData.types.forEach(element => {
             htmlType += `
@@ -39,6 +44,7 @@ async function renderPokemons() {
             `;
         });
 
+        //Get pokemon item
         htmlPokemon += `
             <div class="item">
                 <div class="item__id">
@@ -76,22 +82,17 @@ function setupLoadMore() {
 
 function searchPokemon(query) {
     htmlPokemon = "";
-    offset = 0;
     if(query === '') {
-        numberOfRender = 36;
         filteredPokemons = Allpokemons;
-        renderPokemons();
     }
     else{
+
         filteredPokemons = Allpokemons.filter(pokemon =>
             pokemon.name.toLowerCase().includes(query.toLowerCase())
         );
-
-        numberOfRender = filteredPokemons.length;
-        console.log(filteredPokemons)
-        renderPokemons();
     }
-
+    offset = 0;
+    renderPokemons();
 }
 const searchInput = document.querySelector('.title__input');
 console.log(searchInput)
@@ -99,6 +100,7 @@ searchInput.addEventListener('input', (event) => {
     const query = event.target.value;
     searchPokemon(query); 
 });
+
 
 
 getPokemon();
