@@ -96,11 +96,20 @@ function searchPokemon(query) {
 }
 const searchInput = document.querySelector('.title__input');
 console.log(searchInput)
+// Hàm debounce
+function debounce(func, delay) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            func(...args);
+        }, delay);
+    };
+}
+const debouncedSearch = debounce(searchPokemon, 200);
 searchInput.addEventListener('input', (event) => {
     const query = event.target.value;
-    searchPokemon(query); 
+    debouncedSearch(query);
 });
-
-
 
 getPokemon();
