@@ -14,7 +14,7 @@ const fetchAPI = async (url) => {
 }
 
 async function getPokemon() {
-    const data = await fetchAPI('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=898');
+    const data = await fetchAPI('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100');
     console.log(data);
     Allpokemons = data.results;
     filteredPokemons = Allpokemons;

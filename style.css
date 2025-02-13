@@ -71,6 +71,7 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     background-size: contain;
+    background-repeat: no-repeat;
     padding: 179.913px 0px 0px;
 }
 .item__name{
